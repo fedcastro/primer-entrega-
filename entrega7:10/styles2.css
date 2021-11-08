@@ -1,0 +1,124 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.header{
+    width: 100%;
+    height: 200px;
+    background-color: #3b3b3b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black
+
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+nav{
+    
+    align-self: left;
+    padding: 30px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    margin: 10px;
+}
+   
+.contenedor{
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    
+    grid-template-columns:repeat(3, 1fr) ;
+    grid-template-rows: 600px 500px 100px;
+    border: solid 1px;
+    gap: 10px;
+
+    }
+    .texto{
+        grid-row: 1;
+        grid-column: span 3;
+        background-color: red;
+        background: url(images/shutterstock_710334430-1.jpeg);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: white;
+        text-align: left;
+        font-size: 1.5em;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+
+
+    .contact{
+        grid-row: 2;
+        grid-column: span 3;
+        background-color: black;
+        color: white;
+        font-size: 2em;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .contact .instagram{
+        grid-column: 1 / 3;
+    }
+
+    .contact .facebook{
+        grid-column: 2 / 3;
+    }
+
+    .contact .twitter{
+        grid-column: 3 / 3;
+    }
+    
+footer{
+    background-color: #3b3b3b;
+    grid-row: 3;
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+@media screen and (max-width: 460){
+    
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        
+        display: grid;
+        
+        grid-template-columns:repeat(3, 1fr) ;
+        grid-template-rows: 1fr 1fr 100px;
+        border: solid 1px;
+        gap: 10px;
+}
+footer{
+    background-color: #3b3b3b;
+    grid-row: 3;
+    grid-column: span 4;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+}

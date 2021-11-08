@@ -1,0 +1,203 @@
+*{ 
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.header{
+    width: 100%;
+    height: 200px;
+    background-color: #3b3b3b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black
+
+}
+body{
+    width: 100%;
+}
+img {
+    width: 200px;
+    height: auto;
+}
+
+nav{
+    
+    align-self: left;
+    padding: 30px;
+    
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 200;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    margin: 10px;
+
+}
+
+
+.contenedor{
+    background-color: rgb(197, 199, 211);}
+    
+   .contenedor{
+    width: 100%;
+    height: 100%;
+    
+    display: grid;
+    
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows: 600px 500px 100px;
+    border: solid 1px;
+    gap: 10px;
+
+    }
+
+    .contenedor .anuncio1{
+        background: url(images/25720840.jpeg);
+       background-size: cover;
+        max-width: 100%;
+        grid-column: span 4;
+        font-family: 'Ceviche One', cursive;
+        font-size: 5.5em;
+        text-align: right;
+        padding-right: 150px;
+        padding-top: 200px;
+        color: white;
+      
+    }
+
+    .ColorDeKillerAnuncio1{
+        color: red;
+    }
+    .contenedor > .anuncio2{
+        background: url(images/hamburguesadepollo.jpeg);
+       grid-row: 2;
+       grid-column: span 2;
+       font-family: 'Faster One', cursive;
+       font-size: 4.5em;
+       text-align: top;
+       color: white;
+    }
+    .contenedor > .anuncio3{
+        background: url(images/heladodevainilla.jpeg);
+        padding-top: -40px;
+        grid-row: 2;
+        grid-column: span 2 ;
+        font-family: 'Spicy Rice', cursive;
+        font-size: 4.5em;
+        text-align: top;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    footer{
+        background-color: #3b3b3b;
+        grid-row: 3;
+        grid-column: span 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        
+    }
+
+@media screen and (max-width: 480px ){
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        
+        display: grid;
+        
+        grid-template-columns:repeat(4, 1fr) ;
+        grid-template-rows: 300px 500px 500px 100px;
+        border: solid 1px;
+        gap: 10px;
+
+
+    }
+ 
+    .contenedor > .anuncio1{
+   
+        grid-column: span 4;
+    grid-row: 1;
+      font-size: 2em;
+      padding-right: 0px;
+      padding-top: 0px;
+
+}
+    
+    .contenedor > .anuncio2{
+        
+        grid-column: span 4;
+    grid-row: 2;
+font-size: 2.5em;
+}
+
+.contenedor > .anuncio3{
+    grid-column: span 4;
+    grid-row: 3;}
+
+    footer{
+        height: 100px;
+        grid-row: 4;
+        grid-column: span 4;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+
+
+    }
+
+
+    @media screen and (max-width: 860px ) {
+    .contenedor{
+        width: 100%;
+        height: 100%;
+        
+        display: grid;
+        
+        grid-template-columns:repeat(4, 1fr) ;
+        grid-template-rows: 300px 500px 500px 100px;
+        border: solid 1px;
+        gap: 10px;
+
+
+    }
+ 
+    .contenedor > .anuncio1{
+   
+        grid-column: span 4;
+    grid-row: 1;
+      font-size: 2em;
+      padding-right: 0px;
+      padding-top: 0px;
+
+}
+    
+    .contenedor > .anuncio2{
+        
+        grid-column: span 4;
+    grid-row: 2;
+font-size: 2.5em;
+}
+
+.contenedor > .anuncio3{
+    grid-column: span 4;
+    grid-row: 3;}
+
+    footer{
+        height: 100px;
+        grid-row: 4;
+        grid-column: span 4;
+        
+    }
+
+
+    }
+        
